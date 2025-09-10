@@ -3,10 +3,9 @@ function adicionarLista() {
     let task = tarefa.value
     let list = document.getElementById("list")
 
-    if (task.length == 0) {
-        alert(`Conteúdo inválido!`)
+    if (task.length <= 2) {
+        alert(`Conteúdo insuficiente!`)
     } else {
-        
         let item = document.createElement("li")
         item.innerText = `${task}`
         //item é o elemento pai
